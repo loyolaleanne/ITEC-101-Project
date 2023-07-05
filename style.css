@@ -112,7 +112,7 @@ section{
 }
 
 .header .flex .image img {
-  width: 7rem;
+  width: 5rem;
   color: white;
 }
 .header .flex .logo{
@@ -120,7 +120,7 @@ section{
    text-transform: capitalize;
    color: #fff;
    font-weight: bolder;
-   margin-right: 50%;
+   margin-right: 40%;
 }
 
 .header .flex .navbar a{
