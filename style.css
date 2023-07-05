@@ -599,8 +599,7 @@ section{
    .header .flex .navbar a{
       display: block;
       margin:4rem;
-
-      
+    
    }
 
    .home-bg .home .container .content h3{
@@ -623,6 +622,13 @@ section{
    .about .box-container{
       grid-template-columns: 1fr;
    }
+   
+   .top .row .content .icons a{
+	display: flex;
+  font-size: 2.3rem;
+  color: #fff;
+  cursor: pointer;
+}
 
 }
 
