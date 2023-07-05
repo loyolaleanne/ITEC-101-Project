@@ -141,7 +141,7 @@ section{
 }
 
 .header .flex .navbar a:hover{
-   color: var(--primary-color);
+   color: #4CA1F2;
 }
 
 .header .flex .navbar .active{
