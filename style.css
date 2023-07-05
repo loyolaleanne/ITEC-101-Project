@@ -246,7 +246,7 @@ section{
 
 .about .row .content{
    flex: 1 1 30rem;
-   padding: 10rem;
+   padding: 5rem;
 }
 
 .about .row .content .image img{
