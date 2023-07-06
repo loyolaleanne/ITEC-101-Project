@@ -2,7 +2,7 @@
 
 :root{
    --main-color:#2f2721;
-   --primary-color:#4CA1F2;
+   --primary-color:#d3ad7f;
    --black:#13131a;
    --border: .1rem solid rgba(255,255,255,.3);
 }
@@ -141,7 +141,7 @@ section{
 }
 
 .header .flex .navbar a:hover{
-   color: #4CA1F2;
+   color: var(--primary-color);
 }
 
 .header .flex .navbar .active{
@@ -276,7 +276,7 @@ section{
 
 /* top destination */
 .top{
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-color:#141E30;
 }
 
@@ -288,8 +288,8 @@ section{
 }
 
 .top .row .content {
-   flex: 1 1 45rem;
-   padding: 10rem;
+   flex: 1 1 40rem;
+   padding: 7rem;
 }
 
 .top .row .content table th{
@@ -360,23 +360,6 @@ section{
    flex-wrap: wrap;
 }
 
-.video .row a{  
-  color: white;
-}
-
-.video .row .content{
-  margin: 0 auto;
-}
-
-.video .row .content .image{
-  width: 30rem;
-}
-
-.video .row .content .image img{
-  width: 30rem;
-  border-radius: 1rem;
-}
-
 .video .row h3{
    font-size: 2rem;
    margin: 5%;
@@ -397,7 +380,7 @@ section{
   text-transform: capitalize;
   }
 
-  .video .row .content .btn2 {
+.video .row .content .btn2 {
    border-radius: 20px;
    display: inline-block;
    margin-top: 1rem;
@@ -409,7 +392,7 @@ section{
    color: #fff;
    cursor: pointer;
    text-transform: capitalize;
-   }
+}
   
 .video .row .content .btn1:hover{
     background-color:var(--black);
@@ -418,6 +401,120 @@ section{
 .video .row .content .btn2:hover{
    background-color:var(--black);
  }
+
+.flip-card {
+   margin: 0 auto;
+   background-color: transparent;
+   width: 35rem;
+   height: 20rem;
+   perspective: 1000px;
+   font-family: sans-serif;
+}
+ 
+.title {
+   font-size: 3.5rem;
+   font-weight: 900;
+   text-align: center;
+   margin: 0;
+}
+
+.text {
+   font-size: 2em;
+   text-align: center;
+   margin: 0;
+}
+ 
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ .flip-card-front1, .flip-card-back1 {
+   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   border-radius: 1rem;
+ }
+
+ .flip-card-front2, .flip-card-back2 {
+   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   border-radius: 1rem;
+ }
+
+ .flip-card-front3, .flip-card-back3 {
+   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   border-radius: 1rem;
+ }
+ 
+ .flip-card-front1 {
+   background: #4CA1F2;
+   color: #13131a;
+ }
+
+ .flip-card-back1 {
+   background: url(./images/beach.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: black;
+   transform: rotateY(180deg);
+ }
+
+ .flip-card-front2 {
+   background: #4CA1F2;
+   color: #13131a;
+ }
+
+ .flip-card-back2 {
+   background: url(./images/summer.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: black;
+   transform: rotateY(180deg);
+ }
+ 
+ .flip-card-front3 {
+   background: #4CA1F2;
+   color: #13131a;
+ }
+
+ .flip-card-back3 {
+   background: url(./images/fresh.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: black;
+   transform: rotateY(180deg);
+ }
+
 
 .line{
    margin-top: 35px;
@@ -564,7 +661,7 @@ section{
 /* end of footer */
 
 
-@media (max-width:991px){
+@media (max-width:1000px){
 
    html{
       font-size: 55%;
@@ -572,7 +669,7 @@ section{
    
 }
 
-@media (max-width:768px){
+@media (max-width:1000px){
 
    #menu-btn{
       display: inline-block;
@@ -598,14 +695,12 @@ section{
 
    .header .flex .navbar a{
       display: block;
-      margin:4rem;
-      
+      margin:4rem;    
    }
 
    .home-bg .home .container .content h3{
       font-size: 4rem;
    }
-
 
 }
 
@@ -631,6 +726,16 @@ section{
       margin-left: 1.7rem;
     }
 
+    .flip-card {
+      margin: 0 auto;
+      background-color: transparent;
+      width: 30rem;
+      height: 20rem;
+      perspective: 1000px;
+      font-family: sans-serif;
+      margin-bottom: 2rem;
+   }
+
 }
 
 /* slider */
@@ -640,9 +745,9 @@ section{
    max-width: 1200px;
    width: 100%;
    position: relative;
-  }
+}
   
-  .wrapper button {
+.wrapper button {
    top: 50%;
    height: 50px;
    width: 50px;
@@ -658,21 +763,21 @@ section{
    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
    transform: translateY(-50%);
    transition: transform 0.1s linear;
-  }
+}
 
-  .wrapper button:active{
+.wrapper button:active{
    transform: translateY(-50%) scale(0.85);
-  }
+}
 
-  .wrapper button:first-child{
+.wrapper button:first-child{
    left: -22px;
-  }
+}
 
-  .wrapper button:last-child{
+.wrapper button:last-child{
    right: -22px;
-  }
+}
 
-  .wrapper .carousel{
+.wrapper .carousel{
    display: grid;
    grid-auto-flow: column;
    grid-auto-columns: calc((100% / 3) - 10px);
@@ -682,32 +787,32 @@ section{
    border-radius: 8px;
    scroll-behavior: smooth;
    scrollbar-width: none;
-  }
+}
 
-  .carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
    display: none;
-  }
+}
 
-  .carousel.no-transition {
+.carousel.no-transition {
    scroll-behavior: auto;
-  }
+}
 
-  .carousel.dragging {
+.carousel.dragging {
    scroll-snap-type: none;
    scroll-behavior: auto;
-  }
+}
 
-  .carousel.dragging .card {
+.carousel.dragging .card {
    cursor: grab;
    user-select: none;
-  }
+}
 
-  .carousel :where(.card, .img) {
+.carousel :where(.card, .img) {
    display: flex;
    justify-content: center;
-  }
+}
 
-  .carousel .card {
+.carousel .card {
    padding: 10px;
    scroll-snap-align: start;
    height: 30rem;
@@ -716,14 +821,14 @@ section{
    cursor: pointer;
    flex-direction: column;
    border-radius: 2rem;
-  }
+}
 
-  .container {
+.container {
    align-items: center;
    justify-content: center;
- }
+}
 
-  .carousel .card .img {
+.carousel .card .img {
    background: #141E30;
    height: 10rem;
    width: 10rem;
@@ -733,7 +838,7 @@ section{
 
    border-radius: 50%;
    float: left;
-  }
+}
 
 .carousel .card .container {
    display: flex;
